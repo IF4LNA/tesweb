@@ -8,14 +8,14 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Home - RentHive</title>
     <style>
-    .navbar {
-      background-color: rgba(0, 115, 239, 0.8); 
-      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.784);
-    }
+        .navbar {
+            background-color: rgba(0, 115, 239, 0.8);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.784);
+        }
 
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjusted for mobile */
             gap: 1rem;
             margin-top: 20px;
         }
@@ -44,10 +44,17 @@
             color: #007bff;
         }
 
+        /* Adjust carousel height for mobile screens */
         .carousel-inner img {
             width: 100%;
-            height: 400px;
+            height: 300px;
             object-fit: cover;
+        }
+
+        @media (min-width: 768px) {
+            .carousel-inner img {
+                height: 400px; /* Larger height for larger screens */
+            }
         }
 
         footer {
@@ -59,45 +66,44 @@
 </head>
 
 <body>
-   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="Renthive_Logo2.png" alt="Logo" width="80" height="50">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Categories</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Promotions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Orders</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-            <!-- Logout Button -->
-            <ul class="navbar-nav ms-3">
-                <li class="nav-item">
-                    <a class="btn btn-outline-light" href="index.html">Logout</a>
-                </li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Renthive_Logo2.png" alt="Logo" width="80" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promotions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <!-- Logout Button -->
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" href="index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-
+    </nav>
 
     <!-- Banner -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -143,7 +149,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Footer -->
     <footer class="mt-5">
