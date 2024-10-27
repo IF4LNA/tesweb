@@ -70,24 +70,6 @@
       background-color: rgb(0, 170, 255);
     }
 
-    /* Grid */
-    .grid-section {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 40px;
-    }
-
-    .card {
-      border: none;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
     /* Footer */
     .footer {
       background-color: #0056b3;
@@ -138,29 +120,37 @@
     <a href="login.html" class="btn btn-login">Mulai Menyewa Sekarang</a>
 
     <!-- Grid  -->
-    <div class="grid-section mt-5">
-      <div class="card" style="width: 18rem;">
-        <img src="OIP.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Kategori Acara</h5>
-          <p class="card-text">Temukan perlengkapan acara mulai dari dekorasi hingga alat pesta.</p>
-          <a href="#" class="btn btn-primary">Selengkapnya</a>
+    <div class="container mt-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="OIP.jpg" class="card-img-top" alt="Kategori Acara">
+            <div class="card-body">
+              <h5 class="card-title">Kategori Acara</h5>
+              <p class="card-text">Temukan perlengkapan acara mulai dari dekorasi hingga alat pesta.</p>
+              <a href="#" class="btn btn-primary">Selengkapnya</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="alat.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Peralatan Konser</h5>
-          <p class="card-text">Sewa peralatan yang Anda butuhkan untuk keperluan acara.</p>
-          <a href="#" class="btn btn-primary">Selengkapnya</a>
+        <div class="col">
+          <div class="card h-100">
+            <img src="alat.jpg" class="card-img-top" alt="Peralatan Konser">
+            <div class="card-body">
+              <h5 class="card-title">Peralatan Konser</h5>
+              <p class="card-text">Sewa peralatan yang Anda butuhkan untuk keperluan acara.</p>
+              <a href="#" class="btn btn-primary">Selengkapnya</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="hand.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Layanan Unggulan</h5>
-          <p class="card-text">Nikmati layanan penyewaan premium dengan berbagai manfaat tambahan.</p>
-          <a href="#" class="btn btn-primary">Selengkapnya</a>
+        <div class="col">
+          <div class="card h-100">
+            <img src="hand.jpg" class="card-img-top" alt="Layanan Unggulan">
+            <div class="card-body">
+              <h5 class="card-title">Layanan Unggulan</h5>
+              <p class="card-text">Nikmati layanan penyewaan premium dengan berbagai manfaat tambahan.</p>
+              <a href="#" class="btn btn-primary">Selengkapnya</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
